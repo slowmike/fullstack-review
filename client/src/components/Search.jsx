@@ -17,6 +17,8 @@ class Search extends React.Component {
   search(e) {
     e.preventDefault();
     this.props.onSearch(this.state.term);
+    e.target.value = '';
+    this.setState({'term': ''});
   }
 
   render() {
@@ -24,7 +26,7 @@ class Search extends React.Component {
       <h3>Add more repos!</h3>
       <form onSubmit={this.search.bind(this)}>
         Enter a github username: <input value={this.state.terms} onChange={this.onChange.bind(this)}/>
-        <button> Add Repos </button>
+        <div><button> Add Repos </button></div>
       </form>
     </div>)
   }

@@ -1,0 +1,92 @@
+body {
+  background-color: #666;
+  color: #aaa;
+  text-align: center;
+}
+
+.outerRepoList {
+  overflow: hidden;
+}
+
+.repoList {
+  display: inline-block;
+  margin-top: 5px;
+  width: 50%;
+  max-height: 700px;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.outerRepo {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.repo {
+  display: inline-block;
+  width: 95%;
+  margin-top: 5px;
+  padding: 5px;
+  border-style: ridge;
+  border-color: #aaa;
+}
+
+.repo:hover {
+  background-color: #aaa;
+  color: #666;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.repo:hover .name {
+  color: #222;
+}
+
+.owner {
+  font-size: 14px;
+}
+
+.stats {
+  font-size: 12px;
+}
+
+.description {
+  font-style: italic;
+  font-size: 10px;
+}
+
+input {
+  background-color: #666;
+  border-style: none;
+  border-bottom-style: solid;
+  border-color: #aaa;
+  color: #aaa;
+  outline: none;
+}
+
+button {
+  width: 50%;
+  margin-top: 5px;
+  padding: 5px;
+  border-style: ridge;
+  border-color: #aaa;
+  background-color: #666;
+  color: #aaa;
+  outline: none;
+}
+
+button:hover {
+  font-weight: bolder;
+  background-color: #aaa;
+  color: #222;
+}

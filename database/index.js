@@ -5,6 +5,7 @@ let repoSchema = mongoose.Schema({
   // TODO: your schema here!
   id: {type: Number, unique: true},
   name: String,
+  description: String,
   owner: {
     login: String,
   },
